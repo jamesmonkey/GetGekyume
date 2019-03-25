@@ -63,9 +63,20 @@ GameManager.prototype.addRandomTile = function () {
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
+  if (this.grid.cellsAvailable()) {
+    var value = Math.random() < 0.9 ? 2 : 4;
+    var tile = new Tile(this.grid.randomAvailableCell(), value);
+
     this.grid.insertTile(tile);
+  if (this.grid.cellsAvailable()) {
+    var value = Math.random() < 0.9 ? 2 : 4;
+    var tile = new Tile(this.grid.randomAvailableCell(), value);
+
     this.grid.insertTile(tile);
-    this.grid.insertTile(tile);
+  if (this.grid.cellsAvailable()) {
+    var value = Math.random() < 0.9 ? 2 : 4;
+    var tile = new Tile(this.grid.randomAvailableCell(), value);
+
     this.grid.insertTile(tile);
   }
 };
