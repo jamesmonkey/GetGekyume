@@ -39,7 +39,7 @@ GameManager.prototype.setup = function () {
 
   this.score       = 0;
   this.over        = false;
-  this.won         = true;
+  this.won         = false;
   this.keepPlaying = false;
 
   // Add the initial tiles
